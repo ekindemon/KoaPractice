@@ -28,5 +28,5 @@ router.get('/about',async (ctx)=>{
 app
   .use(router.routes()) //啟動路由
   .use(router.allowedMethods()) //可以配置也可以不配置，建議配置。
-  
+  console.log('啟動')
 app.listen(3000)

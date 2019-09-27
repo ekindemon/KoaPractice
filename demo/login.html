@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="password" id="pwd">
+    <button id="submit_btn">提交</button>
+    
+    <script>
+        const xhr = new XMLHttpRequest();
+        
+        document.getElementById('submit_btn').addEventListener('click', login, false);
+
+        function login() {
+            let data = {
+                name: document.getElementById('name').value,
+                pwd: document.getElementById('pwd').value,
+            }
+            
+            xhr.open('POST', '/api/user/login');
+            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.send(JSON.stringify(data));
+        }       
+    </script>
+</body>
+</html>

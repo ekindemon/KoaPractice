@@ -5,10 +5,12 @@
   "main": "koa.js",
   "dependencies": {
     "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {},
   "scripts": {
+    "go": "node koaa.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
