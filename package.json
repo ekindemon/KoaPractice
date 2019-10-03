@@ -6,12 +6,15 @@
   "dependencies": {
     "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
-    "mssql": "^5.1.0"
+    "mssql": "^5.1.0",
+    "nodemon": "^1.19.3"
   },
   "devDependencies": {},
   "scripts": {
-    "go": "node koaa.js",
+    "go": "nodemon ./koaAPI/app.js",
+    "gogo": "nodemon ./test2/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
