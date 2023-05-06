@@ -9,7 +9,7 @@
     "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
     "mssql": "^5.1.0",
-    "nodemon": "^1.19.3"
+    "nodemon": "^2.0.22"
   },
   "devDependencies": {},
   "scripts": {
